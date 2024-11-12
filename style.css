@@ -1,54 +1,65 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #676767;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 button {
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    border: none;
-    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
 }
 
 .header {
     display: flex;
     align-items: center;
-    padding: 46px 0 24px 0;
-    margin: 0 94px;
+    padding: 46px 0 24px;
     border-bottom: 1px solid #cbcbcb;
+}
+
+.header, .hero-section {
+    margin: 0 94px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    padding-right: 103px;
+    margin-right: 103px;
 }
 
 .logo-image {
-    padding-right: 11px;
+    margin-right: 11px;
 }
 
 .logo-text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 21px;
-    color: #6C5FBC;
     line-height: 28px;
+    color: #6C5FBC;
 }
 
 .menu {
     flex-grow: 2;
-    font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
     color: #606060;
 }
 
@@ -61,16 +72,97 @@ button {
     font-size: 0;
 }
 
-.login-button {
+.text-button {
     color: #606060;
+    padding: 0;
     background: transparent;
-    margin-right: 36px;
+    border: none;
 }
 
-.sign-up-button {
-    width: 121px;
-    height: 63px;
-    border-radius: 18px;
-    color: #F9F9F9;
+.primary-button {
+    color: #FFFFFF;
     background-color: #6C5FBC;
+    border: none;
+}
+
+.primary-button, .secondary-button {
+    padding: 18px 30px;
+    border-radius: 12px;
+}
+
+.hero-section {
+    padding-top: 75px;
+}
+
+.hero-information {
+    grid-column: span 5;
+}
+
+.hero-images {
+    grid-column: span 7;
+}
+
+.hero-subtitle, .hero-title, .hero-text, .hero-buttons {
+    margin-bottom: 30px;
+}
+
+.hero-images {
+    justify-self: end;
+}
+
+.subtitle, .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    position: relative;
+    padding-left: 64px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #201F1F33;
+    text-transform: uppercase;
+
+}
+
+.hero-subtitle::before {
+    content: "";
+    height: 1px;
+    width: 54px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #201F1F33;
+}
+
+.hero-title {
+    font-size: 75px;
+    line-height: 90px;
+    letter-spacing: -3px;
+    color: #201F1F;
+}
+
+.secondary-button {
+    color: #6C5FBC;
+    background: transparent;
+    border: 1.5px solid #6C5FBC;
+}
+
+.hero-rating {
+    display: flex;
+    align-items: end;
+    column-gap: 15px;
+}
+
+.rating-amount {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #334155;
+}
+
+.food-image {
+    object-fit: cover;
 }
