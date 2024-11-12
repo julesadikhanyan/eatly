@@ -165,4 +165,44 @@ button {
 
 .food-image {
     object-fit: cover;
+    object-position: top;
+}
+
+.achievements-container {
+    background-color: #5C4EAE;
+    color: #FFFFFF;
+}
+
+.achievements-list {
+    padding: 30px 94px;
+}
+
+.grid-item-1 {
+    grid-column: 2 / span 2;
+}
+
+.grid-item-2 {
+    grid-column: 6 / span 2;
+}
+
+.grid-item-3 {
+    grid-column: 10 / span 2;
+}
+
+.achievements-item p {
+    text-align: center;
+}
+
+.achievements-amount {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 54px;
+}
+
+.achievements-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #C5BFED;
 }
