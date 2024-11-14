@@ -35,7 +35,7 @@ button {
     border-bottom: 1px solid #cbcbcb;
 }
 
-.header, .hero-section {
+.header, .hero-section, .application-section {
     margin: 0 94px;
 }
 
@@ -91,11 +91,12 @@ button {
 }
 
 .hero-section {
-    padding-top: 75px;
+    padding: 20px 0;
 }
 
 .hero-information {
     grid-column: span 5;
+    padding-top: 70px;
 }
 
 .hero-images {
@@ -163,7 +164,7 @@ button {
     color: #334155;
 }
 
-.food-image {
+.food-image, .application-image {
     object-fit: cover;
     object-position: top;
 }
@@ -205,4 +206,36 @@ button {
     font-size: 14px;
     line-height: 22px;
     color: #C5BFED;
+}
+
+.application-section {
+    padding: 100px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.application-image {
+    grid-column: 3 / span 4;
+}
+
+.application-information {
+    grid-column: span 4;
+}
+
+.application-title {
+    font-size: 51px;
+    line-height: 58px;
+    color: #18181B;
+    padding-top: 90px;
+}
+
+.application-list {
+    list-style-type: disc;
+    margin-left: 12px;
+    padding: 60px 0 60px 8px;
+    font-size: 20px;
+    line-height: 30px; 
+}
+
+.application-item:not(:last-child) {
+    margin-bottom: 30px;
 }
