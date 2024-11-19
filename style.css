@@ -25,7 +25,7 @@ button {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: 10px;
+    column-gap: 20px;
 }
 
 .header {
@@ -35,7 +35,7 @@ button {
     border-bottom: 1px solid #cbcbcb;
 }
 
-.header, .hero-section, .application-section {
+.header, .hero-section, .application-section, .restaurants-section {
     margin: 0 94px;
 }
 
@@ -164,7 +164,7 @@ button {
     color: #334155;
 }
 
-.food-image, .application-image {
+.food-image, .application-image, .restaurant-image {
     object-fit: cover;
     object-position: top;
 }
@@ -208,8 +208,8 @@ button {
     color: #C5BFED;
 }
 
-.application-section {
-    padding: 100px 0;
+.application-section, .restaurants-section {
+    padding: 80px 0;
     border-bottom: 1px solid #cbcbcb;
 }
 
@@ -238,4 +238,86 @@ button {
 
 .application-item:not(:last-child) {
     margin-bottom: 30px;
+}
+
+.restaurants-title {
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.restaurants-list {
+    margin-bottom: 60px;
+}
+
+.restaurant-item {
+    grid-column: span 4;
+    border-radius: 30px;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 6px 71px 36px 0 #E5E5E5B3; 
+}
+
+.restaurant-image {
+    width: 100%;
+}
+
+.restaurant-information {
+    padding: 25px;
+}
+
+.restaurant-tag {
+    background-color: #F7EDD0;
+    color: #DAA31A;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    border-radius: 5px;
+    max-width: fit-content;
+    padding: 3px 8px;
+}
+
+.restaurant-name {
+    font-size: 26px;
+    line-height: 42px;
+    color: #323142;
+}
+
+.restaurant-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-time-rating {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #8E97A6;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.favourites-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #DBD9EE;
+    border: none;
+    position: relative;
+}
+
+.favourites-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view-all-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 10px;
 }
