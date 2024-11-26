@@ -35,7 +35,7 @@ button {
     border-bottom: 1px solid #cbcbcb;
 }
 
-.header, .hero-section, .application-section, .restaurants-section {
+.header, .hero-section, .application-section, .restaurants-section, .dishes-section {
     margin: 0 94px;
 }
 
@@ -208,7 +208,7 @@ button {
     color: #C5BFED;
 }
 
-.application-section, .restaurants-section {
+.application-section, .restaurants-section, .dishes-section {
     padding: 80px 0;
     border-bottom: 1px solid #cbcbcb;
 }
@@ -240,14 +240,14 @@ button {
     margin-bottom: 30px;
 }
 
-.restaurants-title {
+.restaurants-title, .dishes-title {
     font-size: 50px;
     line-height: 58px;
     text-align: center;
     padding-bottom: 80px;
 }
 
-.restaurants-list {
+.restaurants-list, .dishes-list {
     margin-bottom: 60px;
 }
 
@@ -259,7 +259,7 @@ button {
     box-shadow: 6px 71px 36px 0 #E5E5E5B3; 
 }
 
-.restaurant-image {
+.restaurant-image, .dishes-image {
     width: 100%;
 }
 
@@ -267,7 +267,7 @@ button {
     padding: 25px;
 }
 
-.restaurant-tag {
+.restaurant-tag, .dishes-tag {
     background-color: #F7EDD0;
     color: #DAA31A;
     font-family: "Poppins", sans-serif;
@@ -282,6 +282,9 @@ button {
 .restaurant-name {
     font-size: 26px;
     line-height: 42px;
+}
+
+.restaurant-name, .dishes-name {
     color: #323142;
 }
 
@@ -290,7 +293,7 @@ button {
     justify-content: space-between;
 }
 
-.restaurant-time-rating {
+.time-rating {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -320,4 +323,54 @@ button {
     align-items: center;
     justify-content: end;
     column-gap: 10px;
+}
+
+.dishes-item {
+    grid-column: span 2;
+    border-radius: 35px;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 7px 82px 41px 0 #E5E5E5B3; 
+    border: 1px solid #F4F4F6;
+    position: relative;
+    padding: 25px 20px;
+}
+
+.dishes-favourites {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
+.dishes-information {
+    padding: 8px 8px 0;
+}
+
+.dishes-name {
+    font-size: 23px;
+    line-height: 38px;
+}
+
+.dishes-time-rating {
+    margin-bottom: 15px;
+}
+
+.price-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-dish {
+    font-weight: 700;
+    font-size: 19px;
+    color: #8E97A6;
+}
+
+.add-button {
+    width: 44px;
+    height: 40px;
+    border: none;
+    background-image: url("img/add-btn.svg");
+    background-size: cover;
 }
