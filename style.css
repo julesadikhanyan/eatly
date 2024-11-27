@@ -9,6 +9,7 @@ body {
     font-size: 18px;
     line-height: 28px;
     color: #676767;
+    background-color: #F9F9F9;
 }
 
 ul {
@@ -35,7 +36,7 @@ button {
     border-bottom: 1px solid #cbcbcb;
 }
 
-.header, .hero-section, .application-section, .restaurants-section, .dishes-section {
+.header, .hero-section, .application-section, .restaurants-section, .dishes-section, .purchases-section {
     margin: 0 94px;
 }
 
@@ -208,9 +209,12 @@ button {
     color: #C5BFED;
 }
 
+.application-section, .restaurants-section, .dishes-section, .purchases-section {
+    border-bottom: 1px solid #cbcbcb;
+}
+
 .application-section, .restaurants-section, .dishes-section {
     padding: 80px 0;
-    border-bottom: 1px solid #cbcbcb;
 }
 
 .application-image {
@@ -240,9 +244,12 @@ button {
     margin-bottom: 30px;
 }
 
-.restaurants-title, .dishes-title {
+.restaurants-title, .dishes-title, .purchases-title {
     font-size: 50px;
     line-height: 58px;
+}
+
+.restaurants-title, .dishes-title {
     text-align: center;
     padding-bottom: 80px;
 }
@@ -284,7 +291,7 @@ button {
     line-height: 42px;
 }
 
-.restaurant-name, .dishes-name {
+.restaurant-name, .dishes-name, .status-title, .status-description {
     color: #323142;
 }
 
@@ -373,4 +380,131 @@ button {
     border: none;
     background-image: url("img/add-btn.svg");
     background-size: cover;
+}
+
+.purchases-section {
+    padding: 80px 20px;
+}
+
+.purchases-title-status {
+    grid-column: span 5;
+}
+
+.purchases-title {
+    padding-bottom: 50px;
+}
+
+.status-item {
+    box-shadow: 0 15px 30px 0 #4646461A; 
+    border-radius: 12px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    border: 1px solid #F4F4F6; 
+    margin-bottom: 15px;   
+}
+
+.status-title {
+    font-size: 26px;
+    line-height: normal;
+}
+
+.status-description, .status-time {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 27px;
+}
+
+.status-time {
+    color: #ACADB9;
+    flex-grow: 2;
+    text-align: end;
+    align-self: flex-end;
+}
+
+.purchases-table-container {
+    grid-column: 8 / span 5;
+
+}
+
+.purchases-table {
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    border: 1.5px solid #EDF2F7;
+    color: #1A202C;
+}
+
+.purchases-table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.purchases-table-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.purchases-filter {
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #FAFAFA;
+    font-size: 19px;
+    line-height: 42px;
+    padding: 0 20px;
+}
+
+.purchases-item {
+    border-radius: 19px;
+    border: 1.5px solid #EDF2F7;
+    padding: 25px;
+}
+
+.purchases-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.purchase-information {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.purchase-title {
+    font-size: 19px;
+    line-height: 28.5px;
+}
+
+.purchase-description {
+    font-weight: 16px;
+    color: #A0AEC0;
+}
+
+.purchase-price {
+    flex-grow: 2;
+    text-align: end;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.purchase-progress {
+    height: 10px;
+    width: 100%;
+    background-color: #6C5FBC33;
+    border-radius: 78px;
+    position: relative;
+}
+
+.purchase-progress-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 70%;
+    background-color: #6C5FBC;
+    border-radius: 78px;
 }
