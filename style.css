@@ -213,7 +213,7 @@ button {
     border-bottom: 1px solid #cbcbcb;
 }
 
-.application-section, .restaurants-section, .dishes-section {
+.application-section, .restaurants-section, .dishes-section, .feedback-section {
     padding: 80px 0;
 }
 
@@ -244,12 +244,12 @@ button {
     margin-bottom: 30px;
 }
 
-.restaurants-title, .dishes-title, .purchases-title {
+.restaurants-title, .dishes-title, .purchases-title, .feedback-title {
     font-size: 50px;
     line-height: 58px;
 }
 
-.restaurants-title, .dishes-title {
+.restaurants-title, .dishes-title, .feedback-title {
     text-align: center;
     padding-bottom: 80px;
 }
@@ -291,7 +291,7 @@ button {
     line-height: 42px;
 }
 
-.restaurant-name, .dishes-name, .status-title, .status-description {
+.restaurant-name, .dishes-name, .status-title, .status-description, .feedback-title {
     color: #323142;
 }
 
@@ -491,7 +491,7 @@ button {
     font-size: 22px;
 }
 
-.purchase-progress {
+.line-progress {
     height: 10px;
     width: 100%;
     background-color: #6C5FBC33;
@@ -499,7 +499,7 @@ button {
     position: relative;
 }
 
-.purchase-progress-active {
+.line-progress-active {
     position: absolute;
     top: 0;
     left: 0;
@@ -507,4 +507,80 @@ button {
     width: 70%;
     background-color: #6C5FBC;
     border-radius: 78px;
+}
+
+.main-feedback {
+    grid-column: span 5;
+    background-image: url("img/feedback-decor.svg");
+    background-repeat: no-repeat;
+    background-position: top 40px right 40px;
+    margin-left: 94px;
+}
+
+.main-feedback, .other-feedback-example {
+    border-radius: 21px;
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    line-height: 0;
+    color: #636363;
+    padding: 40px;
+}
+
+.main-feedback-header {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.main-feedback-title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: normal;
+    color: #030314;
+}
+
+.main-feedback-subtitle {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: normal;
+    color: #5E5D5D;
+}
+
+.main-feedback-text, .other-feedback-text {
+    font-style: italic;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.main-feedback-text {
+    padding: 30px 0;
+}
+
+.other-feedback {
+    grid-column: span 7;
+}
+
+.other-feedback-progress {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.other-feedback-progress .line-progress {
+    width: calc(100% - 94px);
+}
+
+.other-feedback-container {
+    display: flex;
+    column-gap: 20px;
+    overflow: hidden;
+}
+
+.other-feedback-example {
+    min-width: 500px;
+}
+
+.other-feedback-text {
+    padding-bottom: 30px;
 }
