@@ -7,393 +7,441 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body class="page">
     <header class="header">
-        <div class="logo-container">
-            <img class="logo-image" src="img/logo.svg" alt="logo" width="46" height="42">
-            <span class="logo-text">eatly</span>
-        </div>
-        <nav class="menu">
-            <ul class="menu-list">
-                <li class="menu-item">Menu</li>
-                <li class="menu-item">Blog</li>
-                <li class="menu-item">Pricing</li>
-                <li class="menu-item">Contacts</li>
-            </ul>
-        </nav>
-        <div class="button-container">
-            <button class="text-button" style="margin-right: 48px;">Login</button>
-            <button class="primary-button">Sign Up</button>
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <img class="logo__image" src="img/logo.svg" alt="logo" width="46" height="42">
+                <span class="logo__text">eatly</span>
+            </div>
+            <nav class="menu header__menu">
+                <ul class="list menu__list">
+                    <li class="menu__item">Menu</li>
+                    <li class="menu__item">Blog</li>
+                    <li class="menu__item">Pricing</li>
+                    <li class="menu__item">Contacts</li>
+                </ul>
+            </nav>
+            <div class="buttons-container">
+                <button class="text-button button" style="margin-right: 48px;">Login</button>
+                <button class="primary-button button">Sign Up</button>
+            </div>
         </div>
     </header>
     <main class="main">
-        <section class="grid hero-section">
-            <div class="hero-information">
-                <p class="subtitle hero-subtitle">over 1000 users</p>
-                <h1 class="title hero-title">Enjoy Foods All Over The <span style="color: #5C4EAE;">World</span></h1>
-                <p class="hero-text">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get 
-                    paychecks up to two days early. Get a <span style="color: #6155AE; font-weight: 500;">$20 bonus</span>.
-                </p>
-                <div class="button-container hero-buttons">
-                    <button class="primary-button" style="margin-right: 18px;">Get Started</button>
-                    <button class="secondary-button">Go Pro</button>
+        <section class="section hero-section">
+            <div class="grid hero-section__inner">
+                <div class="hero-section__text-content">
+                    <p class="subtitle hero-section__subtitle">over 1000 users</p>
+                    <h1 class="title h1 hero-section__title">
+                        Enjoy Foods All Over The <span style="color: #5C4EAE;">World</span>
+                    </h1>
+                    <p class="hero-section__text">
+                        EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get 
+                        paychecks up to two days early. Get a <span style="color: #6155AE; font-weight: 500;">$20 bonus</span>.
+                    </p>
+                    <div class="buttons-container">
+                        <button class="primary-button button" style="margin-right: 18px;">Get Started</button>
+                        <button class="secondary-button button">Go Pro</button>
+                    </div>
+                    <div class="rating hero-section__rating">
+                        <img class="rating__sourсe" src="img/rating-source.svg" alt="rating-source" width="123" height="30">
+                        <img class="rating__stars" src="img/rating-stars.svg" alt="rating-stars" width="96" height="23">
+                        <span class="rating__amount">4900+</span>
+                    </div>
                 </div>
-                <div class="hero-rating">
-                    <img class="rating-source-image" src="img/trustpilot.svg" alt="trastpilot-image" width="123" height="30">
-                    <img class="rating-stars-image" src="img/stars.svg" alt="stars-image" width="96" height="23">
-                    <span class="rating-amount">4900+</span>
+                <div class="hero-section__image-content">
+                    <img class="hero-section__image" src="img/hero.png" alt="hero" width="730" height="645">
                 </div>
-            </div>
-            <div class="hero-images">
-                <img class="food-image" src="img/food-bg.png" alt="food-background" width="730" height="645">
             </div>
         </section>
-        <div class="achievements-container">
-            <ul class=" grid achievements-list">
-                <li class="grid-item-1 achievements-item">
-                    <p class="achievements-amount">10K+</p>
-                    <p class="achievements-text">Satisfied Costumers All Great Over The World </p>
+        <div class="achievements">
+            <ul class="grid list achievements__list">
+                <li class="achievements__column1">
+                    <p class="achievements__title">10K+</p>
+                    <p class="achievements__text">Satisfied Costumers All Great Over The World </p>
                 </li>
-                <li class="grid-item-2 achievements-item">
-                    <p class="achievements-amount">4M</p>
-                    <p class="achievements-text">Healthy Dishes Sold Including Milk Shakes Smooth</p>
+                <li class="achievements__column2">
+                    <p class="achievements__title">4M</p>
+                    <p class="achievements__text">Healthy Dishes Sold Including Milk Shakes Smooth</p>
                 </li>
-                <li class="grid-item-3 achievements-item">
-                    <p class="achievements-amount">99.99%</p>
-                    <p class="achievements-text">Reliable Customer Support We Provide Great Experiences</p>
+                <li class="achievements__column3">
+                    <p class="achievements__title">99.99%</p>
+                    <p class="achievements__text">Reliable Customer Support We Provide Great Experiences</p>
                 </li>
             </ul>
         </div>
-        <section class="grid application-section">
-            <img class="application-image" src="img/application.png" alt="application-image" width="372" height="625">
-            <div class="application-information">
-                <h2 class="title application-title">Premium <span style="color: #6C5FBC;">Quality</span> For Your Health</h2>
-            <ul class="application-list">
-                <li class="application-item">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</li>
-                <li class="application-item">These foods promote overall wellness by support healthy digestion and boosting immunity</li>
+        <section class="section app-section">
+            <div class="grid app-section__inner">
+                <img class="app-section__image" src="img/application.png" alt="application" width="372" height="625">
+            <div class="app-section__text-content">
+                <h2 class="title h2 app-section__title">
+                    Premium <span style="color: #6C5FBC;">Quality</span> For Your Health
+                </h2>
+            <ul class="list app-section__list">
+                <li class="app-section__item">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</li>
+                <li class="app-section__item">These foods promote overall wellness by support healthy digestion and boosting immunity</li>
             </ul>
-            <button class="primary-button">Download</button>
+            <button class="primary-button button">Download</button>
+            </div>
             </div>
         </section>
-        <section class="restaurants-section">
-            <h2 class="title restaurants-title">Our Top <span style="color: #6C5FBC;">Restaurants</span></h2>
-            <ul class="grid restaurants-list">
-                <li class="restaurant-item">
-                    <img class="restaurant-image" src="img/restaurant.png" alt="restaurant-image">
-                    <div class="restaurant-information">
-                        <div class="restaurant-tag">
-                            <span class="restaurant-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title restaurant-name">The Chicken King</h3>
-                        <div class="restaurant-bottom">
-                            <div class="restaurant-time-rating time-rating">
-                                <span class="restaurant-time">24 min &bull;</span>
-                                <img class="restaurant-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="restaurant-rating">4.8</span>
+        <section class="section restaurants-section">
+            <div class="grid restaurants-section__inner">
+                <h2 class="title h2 restaurants-section__title">Our Top <span style="color: #6C5FBC;">Restaurants</span></h2>
+                <ul class="list restaurants-section__list">
+                    <li class="restaurants-section__item restaurant">
+                        <img class="restaurant__image" src="img/restaurant.png" alt="restaurant-image">
+                        <div class="restaurant__text-content">
+                            <div class="tag restaurant__tag">
+                                <span class="tag__name">Healthy</span>
                             </div>
-                            <button class="favourites-button">
-                                <img class="favourites-image" src="img/favourites.svg" alt="add-to-favourites-button">
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="restaurant-item">
-                    <img class="restaurant-image" src="img/restaurant.png" alt="restaurant-image">
-                    <div class="restaurant-information">
-                        <div class="restaurant-tag">
-                            <span class="restaurant-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title restaurant-name">The Chicken King</h3>
-                        <div class="restaurant-bottom">
-                            <div class="restaurant-time-rating time-rating">
-                                <span class="restaurant-time">24 min &bull;</span>
-                                <img class="restaurant-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="restaurant-rating">4.8</span>
-                            </div>
-                            <button class="favourites-button">
-                                <img class="favourites-image" src="img/favourites.svg" alt="add-to-favourites-button">
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li class="restaurant-item">
-                    <img class="restaurant-image" src="img/restaurant.png" alt="restaurant-image">
-                    <div class="restaurant-information">
-                        <div class="restaurant-tag">
-                            <span class="restaurant-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title restaurant-name">The Chicken King</h3>
-                        <div class="restaurant-bottom">
-                            <div class="restaurant-time-rating time-rating">
-                                <span class="restaurant-time">24 min &bull;</span>
-                                <img class="restaurant-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="restaurant-rating">4.8</span>
-                            </div>
-                            <button class="favourites-button">
-                                <img class="favourites-image" src="img/favourites.svg" alt="add-to-favourites-button">
-                            </button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="view-all-container">
-                <a class="view-all">View All</a>
-                <img class="view-all-arrow" src="img/view-all.svg" alt="view-all">
-            </div>
-        </section>
-        <section class="dishes-section">
-            <h2 class="title dishes-title">Our Top <span style="color: #6C5FBC;">Dishes</span></h2>
-            <ul class="grid dishes-list">
-                <li class="dishes-item">
-                    <img class="dishes-favourites" src="img/favourites-dishes.svg" alt="dishes-favourites">
-                    <img class="dishes-image" src="img/dishes-image.png" alt="dishes-image">
-                    <div class="dishes-information">
-                        <div class="dishes-tag">
-                            <span class="dishes-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title dishes-name">Swe Dish</h3>
-                        <div class="dishes-bottom">
-                            <div class="dishes-time-rating time-rating">
-                                <span class="dishes-time">24 min &bull;</span>
-                                <img class="dishes-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="dishes-rating">4.8</span>
-                            </div>
-                            <div class="price-add">
-                                <p class="price-dish">
-                                    <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
-                                </p>
-                                <button class="add-button"></button>
+                            <h3 class="title h3 restaurant__title">The Chicken King</h3>
+                            <div class="restaurant__desc-container">
+                                <div class="restaurant__desc-text">
+                                    <p class="restaurant__time">24 min &bull;</p>
+                                    <img 
+                                        class="restaurant__rating-star" 
+                                        src="img/star.svg"
+                                        alt="restaurant-rating-image"
+                                    >
+                                    <span class="restaurant__rating">4.8</span>
+                                </div>
+                                <button class="favourites-button button">
+                                    <img 
+                                        class="favourites-button__image"
+                                        src="img/favourites.svg" 
+                                        alt="favourites-button"
+                                    >
+                                </button>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="dishes-item">
-                    <img class="dishes-favourites" src="img/favourites-dishes.svg" alt="dishes-favourites">
-                    <img class="dishes-image" src="img/dishes-image.png" alt="dishes-image">
-                    <div class="dishes-information">
-                        <div class="dishes-tag">
-                            <span class="dishes-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title dishes-name">Swe Dish</h3>
-                        <div class="dishes-bottom">
-                            <div class="dishes-time-rating time-rating">
-                                <span class="dishes-time">24 min &bull;</span>
-                                <img class="dishes-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="dishes-rating">4.8</span>
-                            </div>
-                            <div class="price-add">
-                                <p class="price-dish">
-                                    <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
-                                </p>
-                                <button class="add-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="dishes-item">
-                    <img class="dishes-favourites" src="img/favourites-dishes.svg" alt="dishes-favourites">
-                    <img class="dishes-image" src="img/dishes-image.png" alt="dishes-image">
-                    <div class="dishes-information">
-                        <div class="dishes-tag">
-                            <span class="dishes-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title dishes-name">Swe Dish</h3>
-                        <div class="dishes-bottom">
-                            <div class="dishes-time-rating time-rating">
-                                <span class="dishes-time">24 min &bull;</span>
-                                <img class="dishes-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="dishes-rating">4.8</span>
-                            </div>
-                            <div class="price-add">
-                                <p class="price-dish">
-                                    <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
-                                </p>
-                                <button class="add-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="dishes-item">
-                    <img class="dishes-favourites" src="img/favourites-dishes.svg" alt="dishes-favourites">
-                    <img class="dishes-image" src="img/dishes-image.png" alt="dishes-image">
-                    <div class="dishes-information">
-                        <div class="dishes-tag">
-                            <span class="dishes-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title dishes-name">Swe Dish</h3>
-                        <div class="dishes-bottom">
-                            <div class="dishes-time-rating time-rating">
-                                <span class="dishes-time">24 min &bull;</span>
-                                <img class="dishes-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="dishes-rating">4.8</span>
-                            </div>
-                            <div class="price-add">
-                                <p class="price-dish">
-                                    <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
-                                </p>
-                                <button class="add-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="dishes-item">
-                    <img class="dishes-favourites" src="img/favourites-dishes.svg" alt="dishes-favourites">
-                    <img class="dishes-image" src="img/dishes-image.png" alt="dishes-image">
-                    <div class="dishes-information">
-                        <div class="dishes-tag">
-                            <span class="dishes-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title dishes-name">Swe Dish</h3>
-                        <div class="dishes-bottom">
-                            <div class="dishes-time-rating time-rating">
-                                <span class="dishes-time">24 min &bull;</span>
-                                <img class="dishes-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="dishes-rating">4.8</span>
-                            </div>
-                            <div class="price-add">
-                                <p class="price-dish">
-                                    <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
-                                </p>
-                                <button class="add-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="dishes-item">
-                    <img class="dishes-favourites" src="img/favourites-dishes.svg" alt="dishes-favourites">
-                    <img class="dishes-image" src="img/dishes-image.png" alt="dishes-image">
-                    <div class="dishes-information">
-                        <div class="dishes-tag">
-                            <span class="dishes-tag-name">Healthy</span>
-                        </div>
-                        <h3 class="title dishes-name">Swe Dish</h3>
-                        <div class="dishes-bottom">
-                            <div class="dishes-time-rating time-rating">
-                                <span class="dishes-time">24 min &bull;</span>
-                                <img class="dishes-rating-image" src="img/rating-image.svg" alt="restaurant-rating-image">
-                                <span class="dishes-rating">4.8</span>
-                            </div>
-                            <div class="price-add">
-                                <p class="price-dish">
-                                    <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
-                                </p>
-                                <button class="add-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="view-all-container">
-                <a class="view-all">View All</a>
-                <img class="view-all-arrow" src="img/view-all.svg" alt="view-all">
-            </div>
-        </section>
-        <section class="grid purchases-section">
-            <div class="purchases-title-status">
-                <h2 class="title purchases-title">Control <span style="color: #6C5FBC;">Purchases</span> Via Dashboard</h2>
-                <ul class="status-list">
-                    <li class="status-item">
-                        <img class="status-image" src="img/dishes-image.png" alt="status-dish-image" width="110" height="110">
-                        <div class="status-information">
-                            <h3 class="title status-title">Chicken Hell</h3>
-                            <p class="status-description">On The Way</p>
-                        </div>
-                        <p class="status-time">3:09 PM</p>
                     </li>
-                    <li class="status-item">
-                        <img class="status-image" src="img/dishes-image.png" alt="status-dish-image" width="110" height="110">
-                        <div class="status-information">
-                            <h3 class="title status-title">Chicken Hell</h3>
-                            <p class="status-description">On The Way</p>
+                    <li class="restaurants-section__item restaurant">
+                        <img class="restaurant__image" src="img/restaurant.png" alt="restaurant-image">
+                        <div class="restaurant__text-content">
+                            <div class="tag restaurant__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 restaurant__title">The Chicken King</h3>
+                            <div class="restaurant__desc-container">
+                                <div class="restaurant__desc-text">
+                                    <p class="restaurant__time">24 min &bull;</p>
+                                    <img 
+                                        class="restaurant__rating-star" 
+                                        src="img/star.svg"
+                                        alt="restaurant-rating-image"
+                                    >
+                                    <span class="restaurant__rating">4.8</span>
+                                </div>
+                                <button class="favourites-button button">
+                                    <img 
+                                        class="favourites-button__image"
+                                        src="img/favourites.svg" 
+                                        alt="favourites-button"
+                                    >
+                                </button>
+                            </div>
                         </div>
-                        <p class="status-time">3:09 PM</p>
                     </li>
-                    <li class="status-item">
-                        <img class="status-image" src="img/dishes-image.png" alt="status-dish-image" width="110" height="110">
-                        <div class="status-information">
-                            <h3 class="title status-title">Chicken Hell</h3>
-                            <p class="status-description">On The Way</p>
+                    <li class="restaurants-section__item restaurant">
+                        <img class="restaurant__image" src="img/restaurant.png" alt="restaurant-image">
+                        <div class="restaurant__text-content">
+                            <div class="tag restaurant__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 restaurant__title">The Chicken King</h3>
+                            <div class="restaurant__desc-container">
+                                <div class="restaurant__desc-text">
+                                    <p class="restaurant__time">24 min &bull;</p>
+                                    <img 
+                                        class="restaurant__rating-star" 
+                                        src="img/star.svg"
+                                        alt="restaurant-rating-image"
+                                    >
+                                    <span class="restaurant__rating">4.8</span>
+                                </div>
+                                <button class="favourites-button button">
+                                    <img 
+                                        class="favourites-button__image"
+                                        src="img/favourites.svg" 
+                                        alt="favourites-button"
+                                    >
+                                </button>
+                            </div>
                         </div>
-                        <p class="status-time">3:09 PM</p>
                     </li>
                 </ul>
-            </div>
-            <div class="purchases-table-container">
-                <div class="purchases-table">
-                    <div class="purchases-table-header">
-                        <h3 class="title purchases-table-title">Purchases</h3>
-                        <div class="purchases-filter">This month &#9660;</div>
-                    </div>
-                    <ul class="purchases-list">
-                        <li class="purchases-item">
-                            <div class="purchase-information">
-                                <img class="putchase-image" src="img/purchase.svg" alt="purchases-icon">
-                                <div class="purchases-title-description">
-                                    <h4 class="title purchase-title">Expense</h4>
-                                    <p class="purchase-description">Increased By 10%</p>
-                                </div>
-                                <p class="purchase-price">$409.00</p>
-                            </div>
-                            <div class="line-progress">
-                                <div class="line-progress-active"></div>
-                            </div>
-                         </li>
-                         <li class="purchases-item">
-                            <div class="purchase-information">
-                                <img class="putchase-image" src="img/purchase.svg" alt="purchases-icon">
-                                <div class="purchases-title-description">
-                                    <h4 class="title purchase-title">Expense</h4>
-                                    <p class="purchase-description">Increased By 10%</p>
-                                </div>
-                                <p class="purchase-price">$409.00</p>
-                            </div>
-                            <div class="line-progress">
-                                <div class="line-progress-active"></div>
-                            </div>
-                         </li>
-                    </ul>
+                <div class="view-all">
+                    <a class="view-all__link">View All</a>
+                    <img class="view-all__icon" src="img/view-all.svg" alt="view-all">
                 </div>
             </div>
         </section>
-        <section class="feedback-section">
-            <h2 class="title feedback-title"><span style="color: #6C5FBC;">Customer</span> Say</h2>
-            <div class="grid feedback-container">
-                <div class="main-feedback">
-                    <div class="main-feedback-header">
-                        <img class="main-feedback-image" src="img/feedback.png" alt="main-feedback-image" width="71" height="71">
-                        <div class="main-feedback-title-container">
-                            <p class="main-feedback-title">Alexander R.</p>
-                            <p class="main-feedback-subtitle">01 Year With Us </p>
+        <section class="section dishes-section">
+            <div class="grid dishes-section__inner">
+                <h2 class="title h2 dishes-section__title">Our Top <span style="color: #6C5FBC;">Dishes</span></h2>
+                <ul class="list dishes-section__list">
+                    <li class="dishes-section__item dish">
+                        <img class="dish__favourites" src="img/favourites-dishes.svg" alt="favourites-button">
+                        <img class="dish__image" src="img/dish.png" alt="dish-image">
+                        <div class="dish__text-content">
+                            <div class="tag dish__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 dish__title">Swe Dish</h3>
+                                <div class="dish__desc-text">
+                                    <span class="dish__time">24 min &bull;</span>
+                                    <img class="dish__rating-star" src="img/star.svg" alt="restaurant-rating-image">
+                                    <span class="dish__rating">4.8</span>
+                                </div>
+                                <div class="dish__price-container">
+                                    <p class="dish__price">
+                                        <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
+                                    </p>
+                                    <button class="dish__add-button button"></button>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="dishes-section__item dish">
+                        <img class="dish__favourites" src="img/favourites-dishes.svg" alt="favourites-button">
+                        <img class="dish__image" src="img/dish.png" alt="dish-image">
+                        <div class="dish__text-content">
+                            <div class="tag dish__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 dish__title">Swe Dish</h3>
+                                <div class="dish__desc-text">
+                                    <span class="dish__time">24 min &bull;</span>
+                                    <img class="dish__rating-star" src="img/star.svg" alt="restaurant-rating-image">
+                                    <span class="dish__rating">4.8</span>
+                                </div>
+                                <div class="dish__price-container">
+                                    <p class="dish__price">
+                                        <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
+                                    </p>
+                                    <button class="dish__add-button button"></button>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="dishes-section__item dish">
+                        <img class="dish__favourites" src="img/favourites-dishes.svg" alt="favourites-button">
+                        <img class="dish__image" src="img/dish.png" alt="dish-image">
+                        <div class="dish__text-content">
+                            <div class="tag dish__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 dish__title">Swe Dish</h3>
+                                <div class="dish__desc-text">
+                                    <span class="dish__time">24 min &bull;</span>
+                                    <img class="dish__rating-star" src="img/star.svg" alt="restaurant-rating-image">
+                                    <span class="dish__rating">4.8</span>
+                                </div>
+                                <div class="dish__price-container">
+                                    <p class="dish__price">
+                                        <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
+                                    </p>
+                                    <button class="dish__add-button button"></button>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="dishes-section__item dish">
+                        <img class="dish__favourites" src="img/favourites-dishes.svg" alt="favourites-button">
+                        <img class="dish__image" src="img/dish.png" alt="dish-image">
+                        <div class="dish__text-content">
+                            <div class="tag dish__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 dish__title">Swe Dish</h3>
+                                <div class="dish__desc-text">
+                                    <span class="dish__time">24 min &bull;</span>
+                                    <img class="dish__rating-star" src="img/star.svg" alt="restaurant-rating-image">
+                                    <span class="dish__rating">4.8</span>
+                                </div>
+                                <div class="dish__price-container">
+                                    <p class="dish__price">
+                                        <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
+                                    </p>
+                                    <button class="dish__add-button button"></button>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="dishes-section__item dish">
+                        <img class="dish__favourites" src="img/favourites-dishes.svg" alt="favourites-button">
+                        <img class="dish__image" src="img/dish.png" alt="dish-image">
+                        <div class="dish__text-content">
+                            <div class="tag dish__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 dish__title">Swe Dish</h3>
+                                <div class="dish__desc-text">
+                                    <span class="dish__time">24 min &bull;</span>
+                                    <img class="dish__rating-star" src="img/star.svg" alt="restaurant-rating-image">
+                                    <span class="dish__rating">4.8</span>
+                                </div>
+                                <div class="dish__price-container">
+                                    <p class="dish__price">
+                                        <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
+                                    </p>
+                                    <button class="dish__add-button button"></button>
+                                </div>
+                        </div>
+                    </li>
+                    <li class="dishes-section__item dish">
+                        <img class="dish__favourites" src="img/favourites-dishes.svg" alt="favourites-button">
+                        <img class="dish__image" src="img/dish.png" alt="dish-image">
+                        <div class="dish__text-content">
+                            <div class="tag dish__tag">
+                                <span class="tag__name">Healthy</span>
+                            </div>
+                            <h3 class="title h3 dish__title">Swe Dish</h3>
+                                <div class="dish__desc-text">
+                                    <span class="dish__time">24 min &bull;</span>
+                                    <img class="dish__rating-star" src="img/star.svg" alt="restaurant-rating-image">
+                                    <span class="dish__rating">4.8</span>
+                                </div>
+                                <div class="dish__price-container">
+                                    <p class="dish__price">
+                                        <span style="font-size: 26px; color: #323142; line-height: normal;">$12</span>.99
+                                    </p>
+                                    <button class="dish__add-button button"></button>
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="view-all">
+                    <a class="view-all__link">View All</a>
+                    <img class="view-all__icon" src="img/view-all.svg" alt="view-all">
+                </div>
+            </div>
+        </section>
+        <section class="section purchases-section">
+            <div class="grid purchases-section__inner">
+                <div class="purchases-section__left">
+                    <h2 class="title h2 purchases-section__title">Control <span style="color: #6C5FBC;">Purchases</span> Via Dashboard</h2>
+                    <ul class="list order-list">
+                        <li class="order-list__item">
+                            <img 
+                                class="order-list__image" 
+                                src="img/dish.png" 
+                                alt="status-dish-image" 
+                                width="110" 
+                                height="110"
+                            >
+                            <div class="order-list__text-content">
+                                <h3 class="title h3 order-list__title">Chicken Hell</h3>
+                                <p class="order-list__status">On The Way</p>
+                            </div>
+                            <p class="order-list__time">3:09 PM</p>
+                        </li>
+                        <li class="order-list__item">
+                            <img 
+                                class="order-list__image" 
+                                src="img/dish.png" 
+                                alt="status-dish-image" 
+                                width="110" 
+                                height="110"
+                            >
+                            <div class="order-list__text-content">
+                                <h3 class="title h3 order-list__title">Chicken Hell</h3>
+                                <p class="order-list__status">On The Way</p>
+                            </div>
+                            <p class="order-list__time">3:09 PM</p>
+                        </li>
+                        <li class="order-list__item">
+                            <img 
+                                class="order-list__image" 
+                                src="img/dish.png" 
+                                alt="status-dish-image" 
+                                width="110" 
+                                height="110"
+                            >
+                            <div class="order-list__text-content">
+                                <h3 class="title h3 order-list__title">Chicken Hell</h3>
+                                <p class="order-list__status">On The Way</p>
+                            </div>
+                            <p class="order-list__time">3:09 PM</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="purchases-section__right">
+                    <div class="purchases-table purchases-section__table">
+                        <div class="purchases-table__header">
+                            <h3 class="title h3 purchases-table__title">Purchases</h3>
+                            <div class="purchases-table__filter">This month &#9660;</div>
+                        </div>
+                        <ul class="list purchases-table__list">
+                            <li class="purchase purchases-table__item">
+                                <div class="purchase__inner">
+                                    <img class="putchase__image" src="img/purchase.svg" alt="purchases-icon">
+                                    <div class="purchase__text-content">
+                                        <h4 class="title h4 purchase__title">Expense</h4>
+                                        <p class="purchase__desc">Increased By 10%</p>
+                                    </div>
+                                    <p class="purchase__price">$409.00</p>
+                                </div>
+                                <div class="line-progress purchase__line-progress">
+                                    <div class="line-progress__active"></div>
+                                </div>
+                             </li>
+                             <li class="purchase purchases-table__item">
+                                <div class="purchase__inner">
+                                    <img class="putchase__image" src="img/purchase.svg" alt="purchases-icon">
+                                    <div class="purchase__text-content">
+                                        <h4 class="title h4 purchase__title">Expense</h4>
+                                        <p class="purchase__desc">Increased By 10%</p>
+                                    </div>
+                                    <p class="purchase__price">$409.00</p>
+                                </div>
+                                <div class="line-progress purchase__line-progress">
+                                    <div class="line-progress__active"></div>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section reviews-section">
+            <div class="grid reviews-section__inner">
+                <h2 class="title h2 reviews-section__title"><span style="color: #6C5FBC;">Customer</span> Say</h2>
+                <div class="full-review reviews-section__full-review">
+                    <div class="full-review__header">
+                        <img class="full-review__image" src="img/review.png" alt="review-image" width="71" height="71">
+                        <div class="full-review__title-container">
+                            <p class="full-review__title">Alexander R.</p>
+                            <p class="full-review__subtitle">01 Year With Us </p>
                         </div>
                     </div>
-                    <p class="main-feedback-text">
+                    <p class="full-review__text">
                         "Online invoice payment helps companies save time, are faster and save maximum effort for the 
                         clients and save maximum effort. Online invoice payment helps companies save time"
                     </p>
-                    <img class="feedback-stars" src="img/feedback-stars.svg" alt="feedback-stars">
+                    <img class="full-review__stars" src="img/review-stars.svg" alt="review-stars">
                 </div>
-                <div class="other-feedback">
-                    <div class="other-feedback-progress">
-                        <div class="other-feedback-container">
-                            <div class="other-feedback-example">
-                                <p class="other-feedback-text">
+                <div class="other-reviews reviews-section__other-reviews">
+                    <div class="other-reviews__inner">
+                        <ul class="list other-reviews__list">
+                            <li class="other-review other-reviews__item">
+                                <p class="other-review__text">
                                     "Online invoice payment helps companies save time, are faster and save maximum effort for the 
                                     clients and save maximum effort. Online invoice payment helps companies save time"
                                 </p>
-                                <img class="main-feedback-stars" src="img/feedback-stars.svg" alt="main-feedback-stars">
-                            </div>
-                            <div class="other-feedback-example">
-                                <p class="other-feedback-text">
+                                <img class="other-review__stars" src="img/review-stars.svg" alt="main-feedback-stars">
+                            </li>
+                            <li class="other-review other-reviews__item">
+                                <p class="other-review__text">
                                     "Online invoice payment helps companies save time, are faster and save maximum effort for the 
                                     clients and save maximum effort. Online invoice payment helps companies save time"
                                 </p>
-                                <img class="main-feedback-stars" src="img/feedback-stars.svg" alt="main-feedback-stars">
-                            </div>
-                        </div>
-                        <div class="line-progress">
-                            <div class="line-progress-active"></div>
+                                <img class="other-review__stars" src="img/review-stars.svg" alt="main-feedback-stars">
+                            </li>
+                        </ul>
+                        <div class="line-progress other-reviews__line-progress">
+                            <div class="line-progress__active"></div>
                         </div>
                     </div>
                 </div>

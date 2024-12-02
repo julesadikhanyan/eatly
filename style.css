@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+.page {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -12,45 +12,36 @@ body {
     background-color: #F9F9F9;
 }
 
-ul {
-    list-style-type: none;
-}
-
-button {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 20px;
-}
-
-.header {
+.header__inner {
     display: flex;
     align-items: center;
-    padding: 46px 0 24px;
     border-bottom: 1px solid #cbcbcb;
+    padding: 24px 0;
 }
 
-.header, .hero-section, .application-section, .restaurants-section, .dishes-section, .purchases-section {
+.header__inner, 
+.hero-section__inner, 
+.app-section__inner, 
+.restaurants-section__inner, 
+.dishes-section__inner,
+.purchases-section__inner {
     margin: 0 94px;
 }
 
-.logo-container {
+.logo {
     display: flex;
     align-items: center;
+}
+
+.header__logo {
     margin-right: 103px;
 }
 
-.logo-image {
+.logo__image {
     margin-right: 11px;
 }
 
-.logo-text {
+.logo__text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 21px;
@@ -59,18 +50,32 @@ button {
 }
 
 .menu {
-    flex-grow: 2;
     font-weight: 500;
     color: #606060;
 }
 
-.menu-list {
+.header__menu {
+    flex-grow: 2;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.menu__list {
     display: flex;
     column-gap: 54px;
 }
 
-.button-container {
+.buttons-container {
     font-size: 0;
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .text-button {
@@ -91,25 +96,22 @@ button {
     border-radius: 12px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+}
+
 .hero-section {
     padding: 20px 0;
 }
 
-.hero-information {
+.hero-section__text-content {
     grid-column: span 5;
     padding-top: 70px;
-}
-
-.hero-images {
-    grid-column: span 7;
-}
-
-.hero-subtitle, .hero-title, .hero-text, .hero-buttons {
-    margin-bottom: 30px;
-}
-
-.hero-images {
-    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
 .subtitle, .title {
@@ -117,18 +119,16 @@ button {
     font-weight: 600;
 }
 
-.hero-subtitle {
+.hero-section__subtitle {
     position: relative;
     padding-left: 64px;
     font-size: 15px;
-    line-height: 18px;
     letter-spacing: 2px;
     color: #201F1F33;
     text-transform: uppercase;
-
 }
 
-.hero-subtitle::before {
+.hero-section__subtitle::before {
     content: "";
     height: 1px;
     width: 54px;
@@ -139,7 +139,7 @@ button {
     background-color: #201F1F33;
 }
 
-.hero-title {
+.h1 {
     font-size: 75px;
     line-height: 90px;
     letter-spacing: -3px;
@@ -152,129 +152,132 @@ button {
     border: 1.5px solid #6C5FBC;
 }
 
-.hero-rating {
+.hero-section__rating {
     display: flex;
     align-items: end;
     column-gap: 15px;
 }
 
-.rating-amount {
+.rating__amount {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     color: #334155;
 }
 
-.food-image, .application-image, .restaurant-image {
+.hero-section__image-content{
+    grid-column: span 7;
+    justify-self: end;
+}
+
+.hero-section__image, .app-section__image, .restaurant-image {
     object-fit: cover;
     object-position: top;
 }
 
-.achievements-container {
+.achievements {
     background-color: #5C4EAE;
     color: #FFFFFF;
 }
 
-.achievements-list {
+.achievements__list {
     padding: 30px 94px;
 }
 
-.grid-item-1 {
+.achievements__column1 {
     grid-column: 2 / span 2;
 }
 
-.grid-item-2 {
+.achievements__column2 {
     grid-column: 6 / span 2;
 }
 
-.grid-item-3 {
+.achievements__column3 {
     grid-column: 10 / span 2;
 }
 
-.achievements-item p {
+.achievements__title, .achievements__text{
     text-align: center;
 }
 
-.achievements-amount {
+.achievements__title {
     font-family: "Public Sans", sans-serif;
     font-weight: 700;
     font-size: 43px;
     line-height: 54px;
 }
 
-.achievements-text {
+.achievements__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
     color: #C5BFED;
 }
 
-.application-section, .restaurants-section, .dishes-section, .purchases-section {
+.app-section__inner, .restaurants-section__inner, .dishes-section__inner, .purchases-section__inner {
     border-bottom: 1px solid #cbcbcb;
 }
 
-.application-section, .restaurants-section, .dishes-section, .feedback-section {
+.app-section__inner, .restaurants-section__inner, .dishes-section__inner, .reviews-section__inner, .purchases-section__inner {
     padding: 80px 0;
 }
 
-.application-image {
+.app-section__image {
     grid-column: 3 / span 4;
 }
 
-.application-information {
+.app-section__text-content {
     grid-column: span 4;
 }
 
-.application-title {
-    font-size: 51px;
-    line-height: 58px;
-    color: #18181B;
+.app-section__title {
     padding-top: 90px;
+    color: #18181B;
 }
 
-.application-list {
+.h2 {
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.app-section__list {
     list-style-type: disc;
     margin-left: 12px;
     padding: 60px 0 60px 8px;
     font-size: 20px;
     line-height: 30px; 
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.application-item:not(:last-child) {
-    margin-bottom: 30px;
-}
-
-.restaurants-title, .dishes-title, .purchases-title, .feedback-title {
-    font-size: 50px;
-    line-height: 58px;
-}
-
-.restaurants-title, .dishes-title, .feedback-title {
+.restaurants-section__title, .dishes-section__title, .reviews-section__title {
     text-align: center;
     padding-bottom: 80px;
+    grid-column: span 12;
 }
 
-.restaurants-list, .dishes-list {
-    margin-bottom: 60px;
+.restaurants-section__list, .dishes-section__list {
+    display: contents;
 }
 
-.restaurant-item {
+.restaurants-section__item {
     grid-column: span 4;
     border-radius: 30px;
     overflow: hidden;
     line-height: 0;
-    box-shadow: 6px 71px 36px 0 #E5E5E5B3; 
+    box-shadow: 6px 30px 36px 0 #E5E5E5B3; 
 }
 
-.restaurant-image, .dishes-image {
+.restaurant__image, .dish__image {
     width: 100%;
 }
 
-.restaurant-information {
+.restaurant__text-content {
     padding: 25px;
 }
 
-.restaurant-tag, .dishes-tag {
+.tag {
     background-color: #F7EDD0;
     color: #DAA31A;
     font-family: "Poppins", sans-serif;
@@ -286,21 +289,18 @@ button {
     padding: 3px 8px;
 }
 
-.restaurant-name {
+.h3 {
     font-size: 26px;
     line-height: 42px;
-}
-
-.restaurant-name, .dishes-name, .status-title, .status-description, .feedback-title {
     color: #323142;
 }
 
-.restaurant-bottom {
+.restaurant__desc-container, .dish__footer {
     display: flex;
     justify-content: space-between;
 }
 
-.time-rating {
+.restaurant__desc-text, .dish__desc-text {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -318,63 +318,60 @@ button {
     position: relative;
 }
 
-.favourites-image {
+.favourites-button__image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.view-all-container {
+.view-all {
+    grid-column: span 12;
     display: flex;
     align-items: center;
     justify-content: end;
     column-gap: 10px;
+    padding-top: 60px;
 }
 
-.dishes-item {
+.dishes-section__item {
     grid-column: span 2;
     border-radius: 35px;
     overflow: hidden;
     line-height: 0;
-    box-shadow: 7px 82px 41px 0 #E5E5E5B3; 
+    box-shadow: 7px 30px 41px 0 #E5E5E5B3; 
     border: 1px solid #F4F4F6;
     position: relative;
     padding: 25px 20px;
 }
 
-.dishes-favourites {
+.dish__favourites {
     position: absolute;
     right: 18px;
     top: 18px;
 }
 
-.dishes-information {
+.dish__text-content {
     padding: 8px 8px 0;
 }
 
-.dishes-name {
-    font-size: 23px;
-    line-height: 38px;
-}
-
-.dishes-time-rating {
+.dish__desc-text {
     margin-bottom: 15px;
 }
 
-.price-add {
+.dish__price-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.price-dish {
+.dish__price {
     font-weight: 700;
     font-size: 19px;
     color: #8E97A6;
 }
 
-.add-button {
+.dish__add-button {
     width: 44px;
     height: 40px;
     border: none;
@@ -382,19 +379,15 @@ button {
     background-size: cover;
 }
 
-.purchases-section {
-    padding: 80px 20px;
-}
-
-.purchases-title-status {
+.purchases-section__left {
     grid-column: span 5;
 }
 
-.purchases-title {
+.purchases-section__title {
     padding-bottom: 50px;
 }
 
-.status-item {
+.order-list__item {
     box-shadow: 0 15px 30px 0 #4646461A; 
     border-radius: 12px;
     padding: 15px 30px;
@@ -405,28 +398,26 @@ button {
     margin-bottom: 15px;   
 }
 
-.status-title {
-    font-size: 26px;
-    line-height: normal;
-}
-
-.status-description, .status-time {
+.order-list__status, .order-list__time {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 19px;
     line-height: 27px;
 }
 
-.status-time {
+.order-list__status {
+    color: #323142;
+}
+
+.order-list__time {
     color: #ACADB9;
     flex-grow: 2;
     text-align: end;
     align-self: flex-end;
 }
 
-.purchases-table-container {
+.purchases-section__right {
     grid-column: 8 / span 5;
-
 }
 
 .purchases-table {
@@ -437,18 +428,18 @@ button {
     color: #1A202C;
 }
 
-.purchases-table-header {
+.purchases-table__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-.purchases-table-title {
+.purchases-table__title {
     font-size: 30px;
-    line-height: 42px;
+    color: #1A202C;
 }
 
-.purchases-filter {
+.purchases-table__filter {
     display: inline-block;
     border-radius: 12px;
     background-color: #FAFAFA;
@@ -457,34 +448,36 @@ button {
     padding: 0 20px;
 }
 
-.purchases-item {
+.purchases-table__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.purchase {
     border-radius: 19px;
     border: 1.5px solid #EDF2F7;
     padding: 25px;
 }
 
-.purchases-item:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-.purchase-information {
+.purchase__inner {
     display: flex;
     column-gap: 20px;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.purchase-title {
+.h4 {
     font-size: 19px;
-    line-height: 28.5px;
+    line-height: 28px;
 }
 
-.purchase-description {
+.purchase__desc {
     font-weight: 16px;
     color: #A0AEC0;
 }
 
-.purchase-price {
+.purchase__price {
     flex-grow: 2;
     text-align: end;
     font-weight: 700;
@@ -496,10 +489,13 @@ button {
     width: 100%;
     background-color: #6C5FBC33;
     border-radius: 78px;
-    position: relative;
 }
 
-.line-progress-active {
+.purchase__line-progress, .other-reviews__line-progress {
+    position: relative;
+}  
+
+.line-progress__active {
     position: absolute;
     top: 0;
     left: 0;
@@ -509,15 +505,18 @@ button {
     border-radius: 78px;
 }
 
-.main-feedback {
-    grid-column: span 5;
-    background-image: url("img/feedback-decor.svg");
-    background-repeat: no-repeat;
-    background-position: top 40px right 40px;
+.reviews-section__full-review {
     margin-left: 94px;
 }
 
-.main-feedback, .other-feedback-example {
+.full-review {
+    grid-column: span 5;
+    background-image: url("img/review-decor.svg");
+    background-repeat: no-repeat;
+    background-position: top 40px right 40px;
+}
+
+.full-review, .other-review {
     border-radius: 21px;
     background-color: #FFFFFF;
     font-family: "Poppins", sans-serif;
@@ -526,61 +525,61 @@ button {
     padding: 40px;
 }
 
-.main-feedback-header {
+.full-review__header {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
 
-.main-feedback-title {
+.full-review__title {
     font-weight: 500;
     font-size: 21px;
     line-height: normal;
     color: #030314;
 }
 
-.main-feedback-subtitle {
+.full-review__subtitle {
     font-weight: 300;
     font-size: 17px;
     line-height: normal;
     color: #5E5D5D;
 }
 
-.main-feedback-text, .other-feedback-text {
+.full-review__text, .other-review__text {
     font-style: italic;
     font-size: 18px;
     line-height: normal;
 }
 
-.main-feedback-text {
+.full-review__text {
     padding: 30px 0;
 }
 
-.other-feedback {
+.other-reviews {
     grid-column: span 7;
 }
 
-.other-feedback-progress {
+.other-reviews__inner {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.other-feedback-progress .line-progress {
+.other-reviews__line-progress {
     width: calc(100% - 94px);
 }
 
-.other-feedback-container {
+.other-reviews__list {
     display: flex;
     column-gap: 20px;
     overflow: hidden;
 }
 
-.other-feedback-example {
+.other-review {
     min-width: 500px;
 }
 
-.other-feedback-text {
+.other-review__text {
     padding-bottom: 30px;
 }
